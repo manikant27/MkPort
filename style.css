@@ -216,8 +216,16 @@ h3 {
 }
 
 @keyframes floatLogo {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); box-shadow: 0 5px 15px var(--primary-glow); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px var(--primary-glow);
+    }
 }
 
 .nav-links {
@@ -419,11 +427,22 @@ h3 {
     font-size: 0.85rem;
     border: 1px solid rgba(88, 166, 255, 0.2);
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-tags span i {
+    font-size: 1.1rem;
 }
 
 .skill-tags span:hover {
     background: var(--primary-color);
     color: #000;
+}
+
+.skill-tags span:hover i {
+    color: #000 !important;
 }
 
 /* Projects Grid */
@@ -725,7 +744,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
- 
+
 }
 
 @media (max-width: 768px) {
